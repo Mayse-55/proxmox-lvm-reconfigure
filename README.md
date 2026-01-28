@@ -69,3 +69,5 @@ mount /dev/pve/local-mpx /mnt/local-mpx
 
 # Rendre le montage permanent au redémarrage
 echo "/dev/pve/local-mpx /mnt/local-mpx ext4 defaults 0 2"
+```
+Vous pouvez modifier `local-mpx` par le nom que vous souhaitez
