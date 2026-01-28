@@ -14,9 +14,8 @@ Ce guide explique comment supprimer le stockage `local-lvm` par défaut de Proxm
 
 ## Prérequis
 
-- Accès SSH root à votre serveur Proxmox
+- Accès root à votre serveur Proxmox
 - Aucune VM/CT critique sur `local-lvm` (ou backups effectués)
-- Au moins 16 GB d'espace libre dans le volume group `pve`
 
 ## Installation
 
