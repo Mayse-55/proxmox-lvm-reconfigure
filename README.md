@@ -1,4 +1,4 @@
-# Proxmox - Configuration du stockage LVM local-mpx
+# Proxmox - Remplacement du stockage local-lvm par un stockage Directory
 
 ## Description
 
