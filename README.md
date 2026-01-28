@@ -33,24 +33,14 @@ qm list
 pct list
 ```
 
-### 2. Arrêter les VMs/CTs (si nécessaire)
-
-```bash
-# Arrêter toutes les VMs
-qm list | awk 'NR>1 {print $1}' | xargs -I {} qm stop {}
-
-# Arrêter tous les conteneurs
-pct list | awk 'NR>1 {print $1}' | xargs -I {} pct stop {}
-```
-
-### 3. Supprimer local-lvm de Proxmox
+### 2. Supprimer local-lvm de Proxmox
 
 ```bash
 # Retirer le stockage de la configuration Proxmox
 pvesm remove local-lvm
 ```
 
-### 4. Supprimer le thin pool LVM
+### 3. Supprimer le thin pool LVM
 
 ```bash
 # Supprimer le thin pool (libère l'espace)
@@ -59,7 +49,7 @@ lvremove /dev/pve/data
 # Confirmer avec 'y' lorsque demandé
 ```
 
-### 5. Créer local-mpx avec 100% de l'espace libre
+### 4. Créer local-mpx avec 100% de l'espace libre
 
 ```bash
 # Vérifier l'espace libéré
