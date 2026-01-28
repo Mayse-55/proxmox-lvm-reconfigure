@@ -1,4 +1,4 @@
-# Proxmox - Remplacement du stockage local-lvm par un stockage Directory
+# Proxmox - Reconfiguration du stockage LVM
 
 ## Description
 
